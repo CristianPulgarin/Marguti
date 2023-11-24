@@ -65,7 +65,8 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    background-color: #61210B;
     font-weight: bold;
     font-size: 30px;
     box-shadow: 5px 5px 10px black; 
@@ -75,8 +76,8 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(48, 48, 48);
+    color: #61210B;
+    background-color: #ffffff;
     border-radius: 20px;
     
     padding: 10px;
@@ -88,7 +89,8 @@ nav a:hover {
 /*Cabecera*/
 
 .hero {
-    background-image: url('img/biblia.jpg'); 
+    /*background-image: url('img/biblia.jpg');*/
+    background: linear-gradient(#230808 30%,#61210B 80%); 
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -351,13 +353,25 @@ footer {
 
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 25px;
         box-shadow: 5px 5px 10px black; 
         border-radius: 20px;
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px;
+    }
+
+
+    
+    nav a:hover {
+        color: #61210B;
+        background-color: #ffffff;
+        border-radius: 20px;
+        
+        padding: 10px;
+        
     }
 
 }
@@ -401,7 +415,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 28px;
         box-shadow: 5px 5px 10px black; 
@@ -412,13 +427,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+   
 
 }
 
@@ -472,7 +489,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -483,14 +501,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         font-size: 50px;
-        padding: 10px 25px 10px;
+        padding: 10px 20px 10px;
         
     }
 
+ 
 }
 
 
@@ -544,7 +563,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -555,13 +575,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+    
 
 }
 
@@ -608,7 +630,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -619,13 +642,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+    
 
 }
 
@@ -673,7 +698,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -684,13 +710,16 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+
+   
 
 }
 
@@ -737,7 +766,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -748,13 +778,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+    
 
 }
 
@@ -801,7 +833,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -812,13 +845,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+    
 
 }
 
@@ -865,7 +900,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: #61210B;
         font-weight: bold;
         font-size: 28px;
         box-shadow: 5px 5px 10px black; 
@@ -876,14 +912,17 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         font-size: 35px;
         padding: 10px;
         
     }
-
+    
+   
+        
+    
 }
 
 
@@ -930,7 +969,9 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+    background-color: #61210B;
+    
         font-weight: bold;
         font-size: 28px;
         box-shadow: 5px 5px 10px black; 
@@ -941,8 +982,8 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: #61210B;
+        background-color: #ffffff;
         border-radius: 20px;
         font-size: 35px;
         padding: 10px;
