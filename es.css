@@ -202,6 +202,8 @@ nav a:hover {
 
     }
 
+
+
     .hover-galeria img{
         width: 80px;
         
@@ -209,12 +211,12 @@ nav a:hover {
 
     .hover-galeria h2 {
         color: #fff;
-        font-size: 50px;
+        font-size: 40px;
 
     }
     .hover-galeria p {
         color: #fff;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
 
     }
@@ -554,7 +556,129 @@ nav a:hover {
         padding: 10px;
         
     }
+/*productos*/
+.productos{
+    height: 400px;
+}
 
+.tit_productos {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(87,43,6);
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 35%;
+    margin-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+}
+
+.imagen-port{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 300px;
+        text-align: center;
+        transform-style: preserve-3d;
+        transition: .7s ease;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+    
+    
+    
+
+    .imagen-port > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    .hover-galeria {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform:scale(0);
+        background: hsla(0, 0%, 0%, 0.7);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+
+
+    .hover-galeria img{
+        width: 80px;
+        
+    }
+
+    .hover-galeria h2 {
+        color: #fff;
+        font-size: 40px;
+
+    }
+    .hover-galeria p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .hover-galeria .fab{
+        font-size:30px;
+    margin: 4px;
+    }
+
+    .hover-galeria a  {
+       
+       text-decoration:none;
+       color: rgb(255, 255, 255);
+       line-height: 35px;
+   }
+   
+
+   .hover-galeria a:hover {
+       
+       color: rgb(0, 0, 0);
+       border-radius: 10px;
+       
+   }
+   .hover-galeria p:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px ;
+}
+
+
+    .imagen-port:hover .hover-galeria {
+        transform: scale(1);
+
+    }
+
+    /*FIN CAJAS*/
+
+/*FIN productos*/
    
 
 }
@@ -769,6 +893,9 @@ nav a:hover {
         padding: 10px;
         
     }
+
+
+    
 
     
 
