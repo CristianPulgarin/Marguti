@@ -370,7 +370,13 @@ nav a:hover {
         box-shadow: 10px 10px 60px black;
     }
 
-  
+    .footer h1{
+        color:white;
+        margin-left: 10px;
+        padding-top: 50px;
+        font-size: 50px;
+        text-align: center;
+    }
 }
 
 
@@ -443,7 +449,7 @@ nav a:hover {
         margin-top: 30px;
         
     }
-
+   
 }
 
 
@@ -495,6 +501,8 @@ nav a:hover {
         padding: 10px;
         
     }
+
+   
 
 }
 
@@ -662,6 +670,7 @@ nav a:hover {
        border-radius: 10px;
        
    }
+
    .hover-galeria p:hover {
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -680,6 +689,67 @@ nav a:hover {
 
 /*FIN productos*/
    
+.footer{
+    background-color: black;
+    height: 100%;
+    
+    
+}
+
+.footer h1{
+    color:white;
+    margin-left: 10px;
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.raya{
+    background-color: white;
+    height: 3px;
+    width: 50%;
+    margin: auto;
+    
+
+}
+
+.cont{
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+
+.row img{
+    
+    
+    
+    width: 60px;
+    height: 50px;
+    
+}
+
+
+.info{
+    
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+
+.titulop{
+    color: white;
+    font-size: 40px;
+    
+}
+
+.textp{
+    color: white;
+    text-align: center;
+}
+
+
 
 }
 
@@ -828,6 +898,7 @@ nav a:hover {
     }
 
     
+
 
 }
 
