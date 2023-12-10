@@ -65,7 +65,8 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    background-color: rgb(87,43,6);
     font-weight: bold;
     font-size: 30px;
     box-shadow: 5px 5px 10px black; 
@@ -75,8 +76,8 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(48, 48, 48);
+    color: rgb(87,43,6);
+    background-color: #ffffff;
     border-radius: 20px;
     
     padding: 10px;
@@ -88,7 +89,8 @@ nav a:hover {
 /*Cabecera*/
 
 .hero {
-    background-image: url('img/biblia.jpg'); 
+    /*background-image: url('img/biblia.jpg');*/
+    background: linear-gradient(rgb(31,15,2) 30%,rgb(87,43,6) 80%); 
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -110,10 +112,10 @@ nav a:hover {
     margin-top: 30px;
 }
 
-.btn {
+.boton {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background: white;
     color: #222;
     text-decoration: none;
     font-weight: bold;
@@ -123,7 +125,7 @@ nav a:hover {
     
 }
 
-.btn:hover {
+.boton:hover {
     background-color: white;
     font-size: 28px;
     
@@ -132,70 +134,190 @@ nav a:hover {
 /*FIN*/
 
 
+/*productos*/
+.productos{
+    height: 400px;
+}
 
-/*Contenedor productos*/
-
-
-
-
-.productos h1{
+.tit_productos {
     font-size: 50px;
-    text-align: center;
-    color: white;
-    
-    background-color: rgb(47, 47, 47);
-    
-}
-
-
-.contenedor_pro{
-    margin-top: 20px;
-    
-    
-}
-
-.contenedor_hombre{
-    
-    
-    margin-right: 50%;
-    text-align: center;
-    
-}
-
-.hombre{
-    font-size: 50px;
-    text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
+    color: rgb(87,43,6);
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 35%;
+    margin-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+}
+
+.imagen-port{
+        width: 45%;
+        margin-bottom: 20px;
+        height: 300px;
+        text-align: center;
+        transform-style: preserve-3d;
+        transition: .7s ease;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+    
+    
+    
+
+    .imagen-port > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    .hover-galeria {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform:scale(0);
+        background: hsla(0, 0%, 0%, 0.7);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .hover-galeria img{
+        width: 80px;
+        
+    }
+
+    .hover-galeria h2 {
+        color: #fff;
+        font-size: 50px;
+
+    }
+    .hover-galeria p {
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    .hover-galeria .fab{
+        font-size:30px;
+    margin: 4px;
+    }
+
+    .hover-galeria a  {
+       
+       text-decoration:none;
+       color: rgb(255, 255, 255);
+       line-height: 35px;
+   }
+   
+
+   .hover-galeria a:hover {
+       
+       color: rgb(0, 0, 0);
+       border-radius: 10px;
+       
+   }
+   .hover-galeria p:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px ;
+}
+
+
+    .imagen-port:hover .hover-galeria {
+        transform: scale(1);
+
+    }
+
+    /*FIN CAJAS*/
+
+/*FIN productos*/
+
+
+.footer{
+    background-color: black;
+    height: 400px;
+    
     
 }
 
-.contenedor_mujer{
-    margin-left: 50%;
-    margin-top: -58.5px;
-    text-align: center;
-}
-
-.mujer{
+.footer h1{
+    color:white;
+    margin-left: 37%;
+    padding-top: 50px;
     font-size: 50px;
-    font-weight: bold;  
-    text-transform: uppercase;
+}
+
+.raya{
+    background-color: white;
+    height: 3px;
+    width: 50%;
+    margin: auto;
+    
+
+}
+
+.cont{
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
 }
 
 
-/*FIN*/
+.row img{
+    
+    
+    
+    width: 60px;
+    height: 50px;
+    
+}
 
 
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 
 
+.titulop{
+    color: white;
+    font-size: 40px;
+    
+}
 
-
-
-footer {
-    background-color: #222;
-    color: #fff;
+.textp{
+    color: white;
     text-align: center;
-    padding: 20px 0;
 }
+
+
+
+
 
 
 
@@ -351,13 +473,25 @@ footer {
 
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 25px;
         box-shadow: 5px 5px 10px black; 
         border-radius: 20px;
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px;
+    }
+
+
+    
+    nav a:hover {
+        color: rgb(87,43,6);
+        background-color: #ffffff;
+        border-radius: 20px;
+        
+        padding: 10px;
+        
     }
 
 }
@@ -401,7 +535,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 28px;
         box-shadow: 5px 5px 10px black; 
@@ -412,13 +547,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+   
 
 }
 
@@ -472,7 +609,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color:rgb(87,43,6);
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -483,14 +621,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         font-size: 50px;
-        padding: 10px 25px 10px;
+        padding: 10px 20px 10px;
         
     }
 
+ 
 }
 
 
@@ -544,7 +683,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -555,13 +695,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+    
 
 }
 
@@ -608,7 +750,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -619,13 +762,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+    
 
 }
 
@@ -638,7 +783,7 @@ footer {
     }
     .imagen img{
         
-        border-radius: 20PX;
+        border-radius: 20px;
         width: 100px;
         height: 90px;
         border: 5px double black;
@@ -673,7 +818,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -684,13 +830,16 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+
+   
 
 }
 
@@ -702,7 +851,7 @@ footer {
     }
     .imagen img{
         
-        border-radius: 20PX;
+        border-radius: 20px;
         width: 100px;
         height: 90px;
         border: 5px double black;
@@ -737,7 +886,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -748,13 +898,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+    
 
 }
 
@@ -766,7 +918,7 @@ footer {
     }
     .imagen img{
         
-        border-radius: 20PX;
+        border-radius: 20px;
         width: 100px;
         height: 90px;
         border: 5px double black;
@@ -801,7 +953,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 32px;
         box-shadow: 5px 5px 10px black; 
@@ -812,13 +965,15 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         
         padding: 10px;
         
     }
+
+    
 
 }
 
@@ -830,7 +985,7 @@ footer {
     }
     .imagen img{
         
-        border-radius: 20PX;
+        border-radius: 20px;
         width: 100px;
         height: 90px;
         border: 5px double black;
@@ -865,7 +1020,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+        background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 28px;
         box-shadow: 5px 5px 10px black; 
@@ -876,14 +1032,17 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         font-size: 35px;
         padding: 10px;
         
     }
-
+    
+   
+        
+    
 }
 
 
@@ -895,7 +1054,7 @@ footer {
     }
     .imagen img{
         
-        border-radius: 20PX;
+        border-radius: 20px;
         width: 100px;
         height: 90px;
         border: 5px double black;
@@ -930,7 +1089,8 @@ footer {
     
     nav a {
         text-decoration: none;
-        color: rgb(48, 48, 48);
+        color: rgb(255, 255, 255);
+    background-color: rgb(87,43,6);
         font-weight: bold;
         font-size: 28px;
         box-shadow: 5px 5px 10px black; 
@@ -941,8 +1101,8 @@ footer {
     }
     
     nav a:hover {
-        color: rgb(255, 255, 255);
-        background-color: rgb(48, 48, 48);
+        color: rgb(87,43,6);
+        background-color: #ffffff;
         border-radius: 20px;
         font-size: 35px;
         padding: 10px;
