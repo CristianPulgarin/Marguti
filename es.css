@@ -58,8 +58,8 @@ nav ul {
 }
 
 nav li {
-    display: inline;
-    
+    display: inline-table;
+    justify-content: space-evenly;
     margin-right: 20px;
 }
 
@@ -72,14 +72,13 @@ nav a {
     box-shadow: 5px 5px 10px black; 
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding: 10px;   
 }
 
 nav a:hover {
     color: rgb(87,43,6);
     background-color: #ffffff;
     border-radius: 20px;
-    
     padding: 10px;
     
 }
@@ -285,14 +284,16 @@ nav a:hover {
 .cont{
     display: flex;
     padding-top: 15px;
-    justify-content: center;
+    margin-left: -40px;
+    justify-content: space-evenly;
+
 }
+
 
 
 .row img{
     
-    
-    
+    margin: 2px;
     width: 60px;
     height: 50px;
     
@@ -319,7 +320,33 @@ nav a:hover {
 
 
 
+/*productos hombres*/
 
+.productos_hombres{
+    height: 900px;
+    background-color: rgb(190, 190, 190);
+    display: flex;
+}
+
+.cont_hom{
+    background-color: black;
+    height: 90%;
+    width: 95%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cajas_prod{
+    background-color: white;
+    height: 300px;
+    width: 30%;
+    margin: 5px;
+}
+
+
+/*FIN Prod hombres*/
 
 
 
@@ -717,6 +744,8 @@ nav a:hover {
     display: flex;
     padding-top: 15px;
     justify-content: center;
+    top: 10px;
+    
 }
 
 
